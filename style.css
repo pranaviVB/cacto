@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+.main{
+    width:100%;
+    height: 100%;
+}
+.logo{
+    color:white;
+}
+body{
+    background-color:#023020;
+}
+.nav1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:10vh;
+    align-items: center;
+    padding:0px 50px;
+}
+span{
+    color:coral;
+}
+ul{
+      display: flex;
+    flex-direction: row;
+    color:white;
+    list-style: none;
+    gap:20px;
+    font-size:20px;
+}
+.child3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    color:white;
+}
+li:hover{
+    color:rgba(255, 255, 255, 0.6)
+}
+.btn{
+
+    padding:1.2vw 2.2vw;
+    background-color: coral;
+    border: none;
+    font-weight: 500;
+    border-radius:10px;
+    color: white;
+    font-size: 17px;
+}
+section{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+
+}
+#left{
+width: 50%;  
+padding:5vw 4vw;
+}
+#h1{
+    text-transform: uppercase;
+    color:white;
+    font-size: 50px;
+}
+#left p{
+    color:#ffffff99; 
+padding-top: 20px;
+padding-bottom: 40px;
+width: 80%;
+font-size: 20px;
+}
+.btns{
+    display: flex;
+    gap: 10px  ;
+}
+#btn2{
+    padding:1.2vw 2.2vw;
+    background-color: transparent;
+    border: 2px solid coral;
+    color: coral;
+    font-weight: 500;
+    border-radius:10px;
+    font-size: 17px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+i{
+    color:white;
+}
+hr{
+    opacity: 0.5;
+}
+#right{
+    width:50%;
+    height: 100%;
+    display: flex;
+}
+.nav1 i{
+    display: none;
+}
+@media(max-width:600px){
+    .nav1 i{
+        display: block;
+    }
+    .nav1{
+        height: 9vh;
+        padding:0 6vw;
+    }
+    .child2, .child3{
+        display: none;
+    }
+    section{
+        height: 98vh;
+        flex-direction: column;
+    }
+    #left{
+        width: 100%;
+        height: 50%;
+        padding: 3vw 6vw;
+    }
+    #right{
+        width: 100%;
+        height: 50%;
+    }
+    #h1{
+        font-size: 10vw;
+    }
+    #left p{
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+}
